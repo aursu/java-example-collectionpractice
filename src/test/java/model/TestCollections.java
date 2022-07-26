@@ -84,7 +84,7 @@ public class TestCollections {
     }
 
     @Test @Disabled
-    void testReadAllWordsFromFileToList() {
+    void testReadAllWordsFromFileToList() throws IOException {
         // todo прочитать все строки, разбить на слова и записать в коллекцию
         List<String> words = readAllWordsFromFileToList();
         assertEquals(257, words.size());
@@ -120,6 +120,17 @@ public class TestCollections {
     void testFindMostFrequentWord() {
         // todo Найти самое часто вчтречающееся слово
         assertEquals("the", mostFrequentWord());
+    }
+
+    @Test @Disabled
+    void testFindWordsByLengthInAlphabetOrder() throws IOException {
+        // todo получить список слов, длиной не более 5 символов, переведенных в нижний регистр, в порядке алфавита, без повторов
+        List<String> strings = null;
+
+        assertEquals(202, strings.size());
+        assertEquals("a", strings.get(0));
+        assertEquals("alice", strings.get(10));
+        assertEquals("would", strings.get(strings.size() - 1));
     }
 
     private String mostFrequentWord() {
