@@ -66,7 +66,7 @@ public class TestCollections {
         assertEquals(new HeavyBox(1,1,1,1), list.get(0));
         assertEquals(new HeavyBox(2,3,4,7), list.get(6));
         assertEquals(new HeavyBox(1,2,3,4), list.get(3));
-        assertEquals(new HeavyBox(1,2,3,4), list.get(4));
+        assertEquals(new HeavyBox(1,3,3,4), list.get(4));
     }
 
     @Test @Disabled
