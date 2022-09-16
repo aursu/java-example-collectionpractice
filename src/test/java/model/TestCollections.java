@@ -118,7 +118,7 @@ public class TestCollections {
 
     @Test @Disabled
     void testFindMostFrequentWord() {
-        // todo Найти самое часто вчтречающееся слово
+        // todo Найти самое часто вcтречающееся слово
         assertEquals("the", mostFrequentWord());
     }
 
